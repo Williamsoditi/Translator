@@ -97,6 +97,7 @@ body{
 
 .icons-container select option{
     background: #333;
+    text-align: left;
 
 }
 

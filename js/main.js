@@ -43,3 +43,12 @@ translate.addEventListener("click", () => {
         toText.setAttribute("placeholder", "Translating")
     })
 })
+
+exchange.addEventListener("click", () => {
+    let tempText = fromText.value,
+        tempLang  = selectTag[0].value;
+        selectTag[0].value = selectTag[1].value
+        selectTag[1].value = tempLang;
+        fromText.value = toText.value
+        toText.value = tempText
+})
