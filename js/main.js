@@ -22,3 +22,24 @@ selectTag.forEach((tag,id) => {
         tag.insertAdjacentHTML("beforeend", option)
     }
 });
+
+translate.addEventListener("click", () => {
+    let text = fromText.value,
+        translateFrom = selectTag[0].value,
+        translateTo = selectTag[1].value
+
+        //console.log(text, translateFrom, translateTo);
+
+        if(!text) return;
+        toText.setAttribute("placeholder", "Translating");
+   
+    
+    let API = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
+
+    fetch(API).then(res => res.json()).then(data => {
+        // console.log(data);
+
+        toText.value = data.responseData.translatedText
+        toText.setAttribute("placeholder", "Translating")
+    })
+})
