@@ -18,7 +18,7 @@ An online language translator application fetching langages from `mymemory-api`
 ## Project Resources
 The following is a live link to the project's site
 
-Link : [Click Here]()
+Link : [Click Here](https://williamsoditi.github.io/Translator/)
 
 ## Installation
 **Requirements**
@@ -49,7 +49,8 @@ On running the commands successfully, you should have a local version of this re
 + [Contact ME](https://linktr.ee/williamsoditi25)
 
 ## Known Bugs
-+ Speaker and copy functionality not working properly
++ Speaker and copy functionality not working properly.
++ No media queries. Full desktop application.
 
 Collaborators can feel free to contact me for fixing.
 
