@@ -2,7 +2,7 @@ const fromText = document.querySelector(".from-text"),
     toText = document.querySelector(".to-text"),
     selectTag = document.querySelectorAll("select"),
     exchange = document.querySelector(".exchange"),
-    translate = document.querySelector("button")
+    translate = document.querySelector("button"),
     icons = document.querySelector("i")
 
 selectTag.forEach((tag,id) => {
@@ -52,3 +52,27 @@ exchange.addEventListener("click", () => {
         fromText.value = toText.value
         toText.value = tempText
 })
+
+// TO be reviewed
+// icons.forEach(icon => {
+//     icon.addEventListener('click', ({target}) => {
+//         if (target.classList.contains == "fa-copy") {
+//             if (target.id == "from") {
+//                 navigator.clipboard.writeText(fromText.value)
+//             }
+//             else{
+//                 navigator.clipboard.writeText(toText.value);
+//             }
+//         } else {
+//             let speaker;
+//             if (target.id == "from") {
+//                 speaker = new SpeechSynthesisUtterance(fromText.value)
+//                 speaker.lang = selectTag[0]
+//             } else {
+//                 speaker = new SpeechSynthesisUtterance(toText.value)
+//                 speaker.lang = selectTag[0];
+//             }
+//             speechSynthesis.speak(speaker)
+//         }
+//     })
+// });
